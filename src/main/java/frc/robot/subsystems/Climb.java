@@ -34,7 +34,7 @@ public class Climb extends SubsystemBase {
     SparkMaxConfig climbConfig = new SparkMaxConfig();
     climbConfig.voltageCompensation(ClimberConstants.ROB_Vol);
     climbConfig.smartCurrentLimit(ClimberConstants.CurrentLimit);
-    climbConfig.idleMode(IdleMode.kBrake);
+    climbConfig.idleMode(IdleMode.kCoast);
     climbMotor.configure(climbConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
     }
 

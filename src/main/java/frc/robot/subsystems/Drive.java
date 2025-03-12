@@ -28,10 +28,10 @@ public class Drive extends SubsystemBase {
    */
   public Drive() {
     // create brushed motors for drive
-    leftLeader = new SparkMax(DriveConstants.M_L1, MotorType.kBrushed);
-    leftFollower = new SparkMax(DriveConstants.M_L2, MotorType.kBrushed);
-    rightLeader = new SparkMax(DriveConstants.M_R1, MotorType.kBrushed);
-    rightFollower = new SparkMax(DriveConstants.M_R2, MotorType.kBrushed);
+    leftLeader = new SparkMax(DriveConstants.M_L1, MotorType.kBrushless);
+    leftFollower = new SparkMax(DriveConstants.M_L2, MotorType.kBrushless);
+    rightLeader = new SparkMax(DriveConstants.M_R1, MotorType.kBrushless);
+    rightFollower = new SparkMax(DriveConstants.M_R2, MotorType.kBrushless);
 
     // set up differential drive class
     drive = new DifferentialDrive(leftLeader, rightLeader);
